@@ -12,20 +12,15 @@ import Footer from "../components/Footer.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Profe Angel</title>
 	</head>
-
 	<body class="flex flex-col min-h-screen bg-white">
-		<!-- Navbar -->
-		<NavBar />
-
-		<!-- Contenido Principal -->
+		<header>
+			<NavBar />
+		</header>
 		<main class="flex-grow">
 			<slot />
 		</main>
-
-		<!-- Footer (siempre abajo) -->
-		<Footer />
+			<Footer />
 	</body>
-
 	<!-- Ionicons -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
